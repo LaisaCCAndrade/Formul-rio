@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./src/img/download.jpg">
+        <link rel="stylesheet" href="./style.css">
+        <title>Formulários</title>
+
+        <style>
+            fieldset{
+                width: 400px;
+                border: solid 1px #000;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Formulário de Cadastro</h1>
+            <h3>Preencha o formulário de cadastro</h3>
+           
+        </header>
+        <!--formulário-->
+        <form>
+            <fieldset>
+                <div class="areaPrincipal">
+                    <legend>Formulário</legend>
+                    <div>
+                        <label for="nome">Nome<input type="text" id="nome" name="nome" placeholder="Digite seu nome" required></label>
+                    </div>
+                    <div>
+                        <label for="email">E-mail<input type="email" id="email" name="email" placeholder="Digite seu e-mail" required></label>
+                    </div>
+                    <div>
+                        <label for="motivo">O que te motivou a participar do evento?</label>
+                        <textarea id="motivo" placeholder="Conte-nos mais" cols="30" rows="5" name="motivo" ></textarea>
+                    </div>
+                    <div>
+                        <label for="modulo">Módulo</label>
+                        <select name="modulo" required id="modulo">
+                            <option value="" selected>Escolha um Módulo</option>
+                            <option value="M1">M1-Módulo 1</option>
+                            <option value="M2">M2-Módulo 2</option>
+                            <option value="M3">M3-Módulo 3</option>
+                            <option value="M4">M4-Módulo 4</option>
+                            <option value="M5">M5-Módulo 5</option>
+                            <option value="M6">M6-Módulo 6</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="senha">Senha<input type="password" id="senha" name="senha" placeholder="Digite sua senha aqui" required></label>
+                    </div>
+                    <div>
+                        <label for="senhaConfirmar">Confirmar senha<input type="password" id="senhaConfirmar" name="senhaConfirmar" placeholder="Digite sua senha novamente" required></label>
+                    </div>
+                    <div>
+                        <p>Deseja receber novidades em seu E-mail</p>
+                        <label for="sim">Sim<input id="sim" type="radio" required name="sim" value="sim"></label>
+                        <label for="nao">Não<input id="nao" type="radio" required name="sim" value="nao"></label>      
+                    </div>
+                    <button type="submit">Cadastrar</button>
+                </div>
+            </fieldset>
+        </form>   
+    </body>
+</html>

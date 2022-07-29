@@ -1,0 +1,15 @@
+fieldset{
+    background-image: url(./src/img/download.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+} 
+.areaPrincipal{
+    width: 60%;
+    background-color: #FFFF;
+    margin: 7%; 
+    margin-top: 50px;
+    padding: 20px;
+
+    
+}
